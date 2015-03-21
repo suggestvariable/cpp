@@ -1,1 +1,1 @@
-# this progam functions as a payroll calculator
+This progam functions as a payroll calculator.
