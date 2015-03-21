@@ -1,1 +1,1 @@
-# cpp projects from school
+cpp projects from school
