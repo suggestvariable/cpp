@@ -1,2 +1,2 @@
-#cpp
-projects from school
+#School Assignments
+c++ projects from school
