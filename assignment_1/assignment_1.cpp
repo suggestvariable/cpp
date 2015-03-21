@@ -1,7 +1,8 @@
 /***********************
 Assignment 1
 ***********************/
-#include <iostream>// allows program to perform input and output
+#include <iostream>
+
 int main()
 {
 	using std::cout;
@@ -38,7 +39,8 @@ int main()
 	sum = number1 + number2 + number3;
 	average = sum / 3;
 
-	cout << "The answers are: \nLargest=" << largest << "\nSmallest=" << smallest << "\nSum=" << sum << "\nAverage=" << average << "\nProduct=" << product << "\n";
+	cout << "The answers are: \nLargest=" << largest << "\nSmallest=" 
+          << smallest << "\nSum=" << sum << "\nAverage=" << average << "\nProduct=" << product << "\n";
 
 	int done;// This code keeps the command prompt from closing
 	cout << "Enter 0 and return when done.\n";

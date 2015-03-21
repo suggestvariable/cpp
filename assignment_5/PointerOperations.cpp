@@ -7,17 +7,11 @@
 #include <time.h>
 
 // Function Prototypes=========================================================
-// Do NOT change the signature of these function prototypes.
-// If you do, your code will not compile with my altered main() function
-// I suggest that you copy the prototypes below and then fill them in.
-// ----------------------------------------------------------------------------
+
 // Read in a line of text INCLUDING SPACES into a string.
-// You may assume that the input will NOT exceed the maxLength available.
-// Keep in mind that cin stops reading at a whitespace. See page 318.
 void ReadString(char * c, int maxLength);
 
 // Get the length of the string and store it in length
-// Hint: How does C++ terminate a string? Look for that character!
 void GetStringLength(char * c, int * len);
 
 // PrintString - Just print the string in forward order using cout
@@ -33,18 +27,13 @@ char * GetValueAtIndex(char * const c, int index);
 bool SearchString(char * c, char testVal);
 // ============================================================================
 
-//[BEGIN MAIN] -- Don't delete this line
 int main()
 {
-  // Use these variables to test.
-  // SIZE could change so make sure your code works with different sizes.
     
   const int SIZE = 100;
   char ca[SIZE];
   char * pc = ca;
     
-  // Your code below
-  // =========================
   // Variable declarations
     
   // Variable for length of string
@@ -102,14 +91,11 @@ int main()
     
   << *GetValueAtIndex(pc, index) << std::endl;
     
-  // =========================
-  // Your code above
     
   std::cout << "Press ENTER";
   std::cin.get();
   return 0;
 }
-//[END MAIN] -- Don't delete this line
 
 // Function to get string input from user
 void ReadString(char * c, int maxLength)
@@ -117,14 +103,8 @@ void ReadString(char * c, int maxLength)
   std::cout << "Enter a string less than " << maxLength << " characters." 
     << std::endl;
     
-  // Your code here
-  // ==============================
   std::cin.getline( c, maxLength);
-  // ==============================
 }
-
-// You need to provide the rest of the functions
-// See Function Prototypes at the top.
 
 // Function to calculate string length
 void GetStringLength(char * const c, int * len)

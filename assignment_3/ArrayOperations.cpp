@@ -4,8 +4,6 @@
 // This progam generates 20 random numbers, and then performs
 // various functions to manipulate that data.
 
-// DO NOT REMOVE ANY OF THE FOLLOWING CODE THAT
-// IS GIVEN TO YOU IN THIS TEMPLATE (including comments)
 
 #include <iostream>
 #include <iomanip>
@@ -30,25 +28,11 @@ double Average(int [], int);
 // Function that sorts the array from smallest to largest
 void BubbleSort(int [], int );
 
-// DO NOT REMOVE THIS LINE OR THE NEXT
-//[BEGIN MAIN]
 int main()
 {
-  // This entire main() function will be deleted
-  // during the assessment and replaced with
-  // another main() function that tests your code.
 
-  // This size may change!
-  // Make sure your functions work for any array size.
   const int ARRAY_SIZE = 20;
   int a[ARRAY_SIZE];
-
-  // Develop code here to test your functions
-  // You may use std::cout in any tests you develop
-  // DO NOT put std::cout statements in any of the
-  // provided function skeletons.
-  // DO NOT WRITE CODE ABOVE HERE
-  // ================================
 
   // Variable Declarations
 
@@ -146,27 +130,11 @@ int main()
     std::cout << a[k] << " ";
   std::cout << std::endl;
 
-  // ================================
-  // DO NOT WRITE CODE BELOW HERE
-
   std::cout << "Press ENTER";
   std::cin.get();	
   return 0;
 }
-// DO NOT REMOVE THIS LINE OR THE NEXT
-//[END MAIN]
 
-// Implement all of the following functions
-// DO NOT put any std::cout statements in them.
-// DO NOT change their signatures
-// Implement the required functionality only
-// Do all of your coding between these two sections
-// in each function:
-// ================================
-// [Your code here]
-// ================================
-// Failure to follow these simple rules will result
-// in major deductions.
 void SeedRand(int x)
 {
   // Seed the random number generator with x

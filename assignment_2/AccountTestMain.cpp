@@ -32,12 +32,11 @@ int main()
     int amount = 0;
 
     // Display a menu to the user
-    // You MUST use these integer values (1-5) for the auto evaluator to work
     std::cout << "(1) to debit account 1" << std::endl;
     std::cout << "(2) to debit account 2" << std::endl;
     std::cout << "(3) to transfer from account 1 to 2" << std::endl;
     std::cout << "(4) to transfer from account 2 to 1" << std::endl;
-    std::cout << "(5) to exit" << std::endl;			// sentinel value
+    std::cout << "(5) to exit" << std::endl; // sentinel value
 
     // Ask the user for their choice
     std::cout << "What would you like to do? ";
@@ -46,7 +45,7 @@ int main()
     // Use a switch statement to detect their option
     switch (selection)
     {
-      case 1:			// case 1 debits account 1
+      case 1:  // case 1 debits account 1
         std::cout << "Enter withdrawal amount for Account 1: ";
         std::cin >> amount;
         if ( amount <= account1 )
@@ -58,7 +57,7 @@ int main()
         else
           std::cout << "Error: Debit amount exceeds balance." << std::endl;
         break;
-      case 2:			// case 2 debits account 2
+      case 2:  // case 2 debits account 2
         std::cout << "Enter withdrawal amount for Account 2: ";
         std::cin >> amount;
         if ( amount <= account2 )
@@ -70,7 +69,7 @@ int main()
         else
           std::cout << "Error: Debit amount exceeds balance." << std::endl;
         break;
-      case 3:			// case 3 transfers from account 1 to 2
+      case 3:  // case 3 transfers from account 1 to 2
         std::cout << "Enter transfer amount from Account 1 to 2: ";
         std::cin >> amount;
         if ( amount <= account1 )
@@ -84,7 +83,7 @@ int main()
           std::cout << "Error: Transfer amount exceeds balance." 
             << std::endl;
         break;
-      case 4:			// case 4 transfers from account 2 to 1
+      case 4:  // case 4 transfers from account 2 to 1
         std::cout << "Enter transfer amount from Account 2 to 1: ";
         std::cin >> amount;
         if ( amount <= account2 )
@@ -106,17 +105,12 @@ int main()
     transaction += 1;
     // display new balances after each transaction
 
-    // DO NOT change these two statements
-    //////////////////////////////////////////////////////////////////////////
-	/////////////////////
-    ////////////////////////////
+
     std::cout << "[" << transaction << "] Account 1 balance: $" 
       << std::setprecision(2) << std::fixed << account1 << std::endl;
     std::cout << "[" << transaction << "] Account 2 balance: $" 
       << std::setprecision(2) << std::fixed << account2 << std::endl;
-    /////////////////////////
-    //////////////////////////////////////////////////////////////////////
-    ////////////////////////////
+
     std::cout << std::endl;
   }
 }

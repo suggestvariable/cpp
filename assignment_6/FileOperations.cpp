@@ -23,7 +23,6 @@ std::ofstream GetOutputFile(std::string filename);
 // Function to check if Input file exists, and open it
 std::ifstream GetInputFile(std::string filename);
 
-//[BEGIN MAIN]
 int main()
 {
   // Declare variables
@@ -75,7 +74,6 @@ int main()
   std::cin.get();
   return 0;
 }
-//[END MAIN]
 
 void ProcessAccounts(std::ifstream &ifile, std::ofstream &ofile, double rate)
 {
@@ -92,8 +90,6 @@ void ProcessAccounts(std::ifstream &ifile, std::ofstream &ofile, double rate)
   // [NAME] [SAVINGS BALANCE] [CREDIT BALANCE]
   // There is a single space between each value and a newline at the end
     
-  // Put your code here
-
   // Call function to go to beginning of files
   SetInputStreamPos(ifile, 0);
   SetOutputStreamPos(ofile, 0);
@@ -129,8 +125,6 @@ void PrintFileContents(std::ifstream &str)
   // Print the contents of the file
   // First, print the file headers
   // Then, print each line.
-  // Make sure the text is properly formatted
-  // Remember the functions available in iomanip?
     
   // EXAMPLE:
   // Name      Savings   Credit
@@ -138,7 +132,6 @@ void PrintFileContents(std::ifstream &str)
   // Joe        $43.52   $0.00
   // Sally     -$1.58    $0.00
     
-  // Put your code here
   // Call function to go to beginning of file
   SetInputStreamPos(str, 0);
 
@@ -173,8 +166,6 @@ std::ifstream GetInputFile(std::string filename)
   // Make sure it exists
   // Return it as an input file stream
     
-  // Put your code here
-
   // Declare local variable
   std::ifstream inFilename(filename);
 
@@ -193,8 +184,6 @@ std::ofstream GetOutputFile(std::string filename)
   // Make sure it exists
   // Return it as an output file stream
   
-  // Put your code here
-
   // Declare local variable
   std::ofstream outFilename(filename);
 
@@ -212,7 +201,6 @@ void SetInputStreamPos(std::ifstream &str, int pos)
   // Set the 'g'et cursor to the desired byte in the stream
   // Use the beginning of the file as the reference point
     
-  // Put your code here
   // Go to beginning of file
   str.clear();
   str.seekg( pos );
@@ -223,7 +211,6 @@ void SetOutputStreamPos(std::ofstream &str, int pos)
   // Set the 'p'ut cursor to the desired byte in the stream
   // Use the beginning of the file as the reference point
     
-  // Put your code here
   // Go to beginning of file
   str.clear();
   str.seekp ( pos );
